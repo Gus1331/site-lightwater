@@ -1,0 +1,65 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');/* h1 */
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');/* h2 */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');/* txt1 */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');/* txt2 */
+:root{
+    --title01:'Cinzel Decorative','Chelsea Market', cursive;
+    --tilte02:'Chelsea Market', cursive;
+    --text01:'Varela Round', Verdana, sans-serif;
+    --text02:'Ubuntu', Verdana, sans-serif;
+    --color01: rgb(17, 13, 054);
+    --color02: rgb(32, 24, 102);
+    --color03: rgb(66, 50, 209);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(content-full/back1.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--text02);
+}
+
+header{
+    background-color: rgb(242, 251, 255);
+    max-width: 980px;
+    margin: auto;
+    margin-top: 1.5em;
+    padding-top: 10px;
+    border-radius: 8px 8px 0 0; 
+    border: 2px solid rgb(3, 2, 24);
+    border-bottom: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 3em;
+    text-indent: 1em;
+    font-family: var(--title01);
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    color: var(--color01);
+    text-shadow: 3px 2px 2.5px rgba(17, 13, 54, 0.363);
+}
+ul#menu{
+    height: 2.78em;
+    background-color: var(--color02);
+    font-family: var(--text02);
+    color: white;
+    list-style-type: none;
+    display: block;
+    border: 2px solid var(--color01);
+}
+ul#menu>li{
+    display: inline;
+    padding: 5px;
+    font-size: 2em;
+    margin: auto;
+    text-align: center;
+    border-left: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid rgb(255, 255, 255);
+}
