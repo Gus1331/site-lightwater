@@ -18,12 +18,12 @@
 }
 
 body{
-    background-image: url(content-full/back1.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    background: rgb(96, 151, 223) url(content-full/back1.png) center center no-repeat fixed;
     background-size: cover;
     font-family: var(--text02);
 }
+
+/* Inicío do header e nav */
 
 header{
     background-color: rgb(242, 251, 255);
@@ -35,6 +35,7 @@ header{
     border: 2px solid rgb(3, 2, 24);
     border-bottom: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 h1{
     font-size: 3em;
@@ -46,20 +47,57 @@ h1{
     text-shadow: 3px 2px 2.5px rgba(17, 13, 54, 0.363);
 }
 ul#menu{
+    width: 100%;
     height: 2.78em;
-    background-color: var(--color02);
+    text-align: center;
     font-family: var(--text02);
-    color: white;
-    list-style-type: none;
-    display: block;
+    background-color: var(--color02);
     border: 2px solid var(--color01);
+    overflow: hidden;
+    list-style-type: none;
 }
 ul#menu>li{
-    display: inline;
+    display: inline-block;
+    width: 15%;
     padding: 5px;
-    font-size: 2em;
     margin: auto;
     text-align: center;
+    font-size: 2em;
     border-left: 2px solid rgb(255, 255, 255);
     border-right: 2px solid rgb(255, 255, 255);
+}
+@media screen and (max-width: 805px){ /* para responsividade da nav */
+    ul#menu>li{
+        width: 13%;
+    }
+}
+ul#menu > li#first{
+    border-left: none;
+}
+ul#menu > li#last{
+    border-right: none;
+}
+li > a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);    
+}
+li > a:hover{
+    color: rgba(255, 255, 255, 0.719);
+}
+li > a:active{
+    color: rgb(255, 255, 255);
+}
+
+/* Fim do header */
+
+/* Inicío do main e conteúdo */
+
+main{
+    background-color: rgb(242, 251, 255);
+    max-width: 980px;
+    margin: auto;
+    margin-top: 75px;
+    border: 2px solid rgb(3, 2, 24);
+    box-sizing: border-box;
+    overflow: hidden;
 }
