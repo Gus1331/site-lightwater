@@ -5,12 +5,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');/* txt2 */
 :root{
     --title01:'Cinzel Decorative','Chelsea Market', cursive;
-    --tilte02:'Chelsea Market', cursive;
+    --title02:'Chelsea Market', cursive;
     --text01:'Varela Round', Verdana, sans-serif;
     --text02:'Ubuntu', Verdana, sans-serif;
     --color01: rgb(17, 13, 054);
     --color02: rgb(32, 24, 102);
-    --color03: rgb(66, 50, 209);
+    --color03: rgb(69, 57, 177);
 }
 *{
     margin: 0;
@@ -93,11 +93,101 @@ li > a:active{
 /* Inicío do main e conteúdo */
 
 main{
-    background-color: rgb(242, 251, 255);
+    position: relative;
     max-width: 980px;
-    margin: auto;
-    margin-top: 75px;
+    margin: 75px auto;
     border: 2px solid rgb(3, 2, 24);
+    border-radius: 0 0 8px 8px; 
+    overflow: hidden;
     box-sizing: border-box;
+    background-color: rgb(242, 251, 255);
+}
+h2{
+    margin-bottom: 1em;
+    padding: 20px;
+    font-size: 2.5em;
+    font-family: var(--title02);
+    text-indent: 2em;
+    color: var(--color02);
+    text-shadow: 3px 2px 2.5px rgba(17, 13, 54, 0.363);
+    background-image: linear-gradient(to top, rgb(255, 255, 255) , rgba(55, 3, 114, 0.171));
+    text-transform: uppercase;
+}
+/* Caixas de texto introdução */
+div#txtleft , div#txtright{
+    display: inline-block;
+    width: 50%;
+    padding: 20px 45px;
+    box-sizing: border-box;
+    font-size: 1.4em;
+    font-family: var(--text01);
+    color: rgb(66, 65, 68);
     overflow: hidden;
 }
+div#txtleft{
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+div#txtright{
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+/* galeria de fotos */
+div#gallery{
+    margin: 30px 20px;
+    height: 350px;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.514);
+    border-radius: 6px;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    padding: 0;
+}
+div.imgs{
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    width: 33.33%;
+    box-sizing: border-box;
+}
+div#imgleft{
+    background: url("content-full/imgleft.jpg") left no-repeat ;
+    background-size: cover;
+    left: 0;
+    border-right: 2px solid rgb(0, 0, 0);
+}
+div#imgcenter{
+    background: url("content-full/imgcenter.jpg") left no-repeat ;
+    background-size: cover;
+    border-left: 2px solid rgb(0, 0, 0);
+    border-right: 2px solid rgb(0, 0, 0);
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+    div#imgright{
+        background: url("content-full/imgright.jpg") right no-repeat ;
+        background-size: cover;    
+        border-left: 2px solid rgb(0, 0, 0);
+    right: 0;
+}
+div.imgs:hover{
+    width: 100%;
+    transition-duration: 1.5s;
+}
+/* Caixa de texto */
+.txtt{
+    padding: 20px 45px;
+    font-size: 1.4em;
+    font-family: var(--text01);
+    overflow: hidden;
+}
+p>strong{
+    font-weight: normal;
+}
+strong>a{
+    text-decoration: none;
+    color: var(--color03);
+    font-weight: bolder;
+}
+abbr{
+    text-decoration: none;
+}
+/* video */
