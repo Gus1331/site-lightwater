@@ -162,18 +162,15 @@ div#imgcenter{
     left: 50%;
     transform: translate(-50%, 0);
 }
-    div#imgright{
-        background: url("content-full/imgright.jpg") right no-repeat ;
-        background-size: cover;    
-        border-left: 2px solid rgb(0, 0, 0);
+div#imgright{
+    background: url("content-full/imgright.jpg") right no-repeat ;
+    background-size: cover;    
+    border-left: 2px solid rgb(0, 0, 0);
     right: 0;
-}
-div.imgs:hover{
-    width: 100%;
-    transition-duration: 1.5s;
 }
 /* Caixa de texto */
 .txtt{
+    text-align: justify;
     padding: 20px 45px;
     font-size: 1.4em;
     font-family: var(--text01);
