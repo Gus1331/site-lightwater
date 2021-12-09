@@ -160,7 +160,7 @@ div#imgcenter{
     border-left: 2px solid rgb(0, 0, 0);
     border-right: 2px solid rgb(0, 0, 0);
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 0%);
 }
 div#imgright{
     background: url("content-full/imgright.jpg") right no-repeat ;
@@ -188,3 +188,43 @@ abbr{
     text-decoration: none;
 }
 /* video */
+#videobackground{
+    background-color: var(--color03);
+    border: 2px solid var(--color02);
+    height: 400px;
+    margin: 30px 20px;
+}
+/* referencias /*
+
+/* Fim do main */
+
+/* Inicío footer */
+footer{
+    color:rgb(255, 255, 255);
+    background-color: var(--color03);
+    border-top: 2px solid var(--color02);
+    height: 87px;
+    padding-left: 1em;
+    font-size: 1.2em;
+}
+#footp{
+    margin-bottom: 10px;
+}
+#credits{
+    text-align: right;
+    font-family: monospace;
+    margin-right: 7px;
+
+}
+#credits>a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.3em;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.788);
+    transition: 0.5s;
+}
+#credits>a:hover{
+    color: rgb(202, 202, 235);
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+    transition: 0.8s;
+}
