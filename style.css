@@ -193,9 +193,80 @@ abbr{
     border: 2px solid var(--color02);
     height: 400px;
     margin: 30px 20px;
+    position: relative;
+    padding: 4%;
+    box-sizing: border-box;
+    overflow: hidden;
 }
-/* referencias /*
-
+#videotext{
+    box-sizing: border-box;
+    display: inline-block;
+    position: absolute;
+    height: 83%;
+    width: 30%;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+#videotext > a{
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.753);
+    transition: 0.1s;
+}
+#videotext > a:hover{
+    text-shadow: 0 0 25px rgb(255, 255, 255);
+    transition: 0.4s;
+}
+#video{
+    box-sizing: border-box;
+    display: inline-block;
+    position: absolute;
+    left: 34%;
+    height: 83%;
+    width: 65%;
+}
+#video > iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+/* imagem e botão */
+#imgfinal{
+    display: inline-block;
+    width: 60%;
+    margin-bottom: -26px;
+}
+button{
+    position: relative;
+    right: -150px;
+    top: -50px;
+    transform: translateX(-50%);
+    font-size: 3em;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--color03);
+    border:3px solid var(--color02);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 40px rgba(12, 78, 131, 0.493);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.781);
+    cursor: pointer;
+    transition: o.1s;
+}
+button:hover{
+    transition: 0.2s;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.884);
+    font-size: 3.1em;
+    box-shadow: none;
+}
 /* Fim do main */
 
 /* Inicío footer */
