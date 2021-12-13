@@ -110,7 +110,7 @@ h2{
     text-indent: 2em;
     color: var(--color02);
     text-shadow: 3px 2px 2.5px rgba(17, 13, 54, 0.363);
-    background-image: linear-gradient(to top, rgb(255, 255, 255) , rgba(55, 3, 114, 0.171));
+    background-image: linear-gradient(to top, transparent , rgba(55, 3, 114, 0.171));
     text-transform: uppercase;
 }
 /* Caixas de texto introdução */
@@ -238,7 +238,7 @@ abbr{
     height: 100%;
 }
 /* imagem e botão */
-#imgfinal{
+#finalimg{
     display: inline-block;
     width: 60%;
     margin-bottom: -26px;
@@ -274,7 +274,7 @@ footer{
     color:rgb(255, 255, 255);
     background-color: var(--color03);
     border-top: 2px solid var(--color02);
-    height: 87px;
+    height: 67px;
     padding-left: 1em;
     font-size: 1.2em;
 }
@@ -298,4 +298,84 @@ footer{
     color: rgb(202, 202, 235);
     text-shadow: 0 0 5px rgb(255, 255, 255);
     transition: 0.8s;
+}
+
+/* Responsividade */
+
+@media screen and (max-width:650px){
+
+    main{
+        background-color: greenyellow;
+    }
+
+
+
+    /* header e nav */
+    header{
+        background-color: var(--color02);
+        margin: 0 0 220px 0;
+        border-radius: 0;
+    }
+    h1{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 3.3em;
+        margin-bottom: 0.6em;
+    }
+    ul#menu{
+        height: max-content;
+        border: none;
+    }
+    ul#menu > li{
+    display: block;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.288);
+    border-left: none;
+    padding: 7px;
+    }
+
+
+    /* caixas de texto */
+    h2{
+        text-indent: 0;
+    }
+    div#txtleft , div#txtright{
+        display: block;
+        width: 100%;
+        border: none;
+    }
+
+
+    /* galeria de fotos */
+    div#gallery{
+        height: 500px;
+    }
+    div.imgs{
+        display: block;
+        height: 33.3%;
+        width: 100%;
+        border: 2px solid rgb(0, 0, 0);
+    }
+    #imgleft{
+        top: 0;
+    }
+    #imgcenter{
+        left: 0;
+        top: 33.33%;
+        transform: translate(0%,-50%);
+    }
+    #imgright{
+        bottom: 0;
+    }
+
+/*
+    header > ul#menu                ///
+    div#textleft / div#textright    ///
+    div#gallery
+    #video ; #videotxt
+    button
+    footer
+*/
+
+
 }
