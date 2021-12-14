@@ -18,7 +18,7 @@
 }
 
 body{
-    background: rgb(96, 151, 223) url(content-full/back1.png) center center no-repeat fixed;
+    background: rgb(96, 151, 223) url(img/back1.png) center center no-repeat fixed;
     background-size: cover;
     font-family: var(--text02);
 }
@@ -149,13 +149,13 @@ div.imgs{
     box-sizing: border-box;
 }
 div#imgleft{
-    background: url("content-full/imgleft.jpg") left no-repeat ;
+    background: url("img/imgleft.jpg") left no-repeat ;
     background-size: cover;
     left: 0;
     border-right: 2px solid rgb(0, 0, 0);
 }
 div#imgcenter{
-    background: url("content-full/imgcenter.jpg") left no-repeat ;
+    background: url("img/imgcenter.jpg") left no-repeat ;
     background-size: cover;
     border-left: 2px solid rgb(0, 0, 0);
     border-right: 2px solid rgb(0, 0, 0);
@@ -163,7 +163,7 @@ div#imgcenter{
     transform: translate(-50%, 0%);
 }
 div#imgright{
-    background: url("content-full/imgright.jpg") right no-repeat ;
+    background: url("img/imgright.jpg") right no-repeat ;
     background-size: cover;    
     border-left: 2px solid rgb(0, 0, 0);
     right: 0;
@@ -300,15 +300,11 @@ footer{
     transition: 0.8s;
 }
 
+
+
 /* Responsividade */
 
 @media screen and (max-width:650px){
-
-    main{
-        background-color: greenyellow;
-    }
-
-
 
     /* header e nav */
     header{
@@ -321,6 +317,7 @@ footer{
         text-align: center;
         font-size: 3.3em;
         margin-bottom: 0.6em;
+        text-indent: 0;
     }
     ul#menu{
         height: max-content;
@@ -332,10 +329,12 @@ footer{
     border-top: 1px solid rgba(0, 0, 0, 0.288);
     border-left: none;
     padding: 7px;
+}
+
+/* caixas de texto */
+    .txtt{
+        text-align: left;
     }
-
-
-    /* caixas de texto */
     h2{
         text-indent: 0;
     }
@@ -344,7 +343,6 @@ footer{
         width: 100%;
         border: none;
     }
-
 
     /* galeria de fotos */
     div#gallery{
@@ -368,14 +366,43 @@ footer{
         bottom: 0;
     }
 
-/*
-    header > ul#menu                ///
-    div#textleft / div#textright    ///
-    div#gallery
-    #video ; #videotxt
-    button
-    footer
-*/
+    /* video */
+    #videotext{
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 150px;
+    }
+    #videotext > a{
+        display: inline-block;
+    }
+    #video{
+        left: -10px;
+        height: 50%;
+        width: 100%;
+        display: block;
+        margin: 10px;
+    }
+    #videobackground{
+        left: -20px;
+        width: 100%;
+        height: 390px;
+        padding: 15px;
+    }
 
+    /* botão principal */
+    button{
+        left: 50%;
+    }
+    #finalimg{
+        display: block;
+        width: 100%;
+        margin-bottom: -89px;
+    }
+
+    /* footer */
+    footer{
+        height: 100%;
+    }
 
 }
